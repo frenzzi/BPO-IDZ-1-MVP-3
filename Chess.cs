@@ -144,22 +144,31 @@ namespace IDZ_MVP.Chess
         static void Main()
         {
             Console.WriteLine("Шахматы");
+            ChessPiece[] chessPieces = new ChessPiece[4];
 
             Coordinate.TryCreate("a1", out Coordinate kingCoordinate);
             King king = new King(false, kingCoordinate);
-            Console.WriteLine(king.SecondName());
+            chessPieces[0] = king;
 
             Coordinate.TryCreate("a2", out Coordinate pawnCoordinate);
             Pawn pawn = new Pawn(true, pawnCoordinate);
-            Console.WriteLine(pawn.SecondName());
+            chessPieces[1] = pawn;
 
             Coordinate.TryCreate("a3", out Coordinate rookCoordinate);
             Rook rook = new Rook(false, rookCoordinate);
-            Console.WriteLine(rook.SecondName());
+            chessPieces[2] = rook;
 
             Coordinate.TryCreate("a4", out Coordinate bishopCoordinate);
             Bishop bishop = new Bishop(true, bishopCoordinate);
-            Console.WriteLine(bishop.SecondName());
+            chessPieces[3] = bishop;
+
+            Console.WriteLine();
+
+            foreach(ChessPiece piece in chessPieces)
+            {
+                Console.WriteLine(piece);
+                Console.WriteLine(piece.SecondName());
+            }
         }
     }
 }
