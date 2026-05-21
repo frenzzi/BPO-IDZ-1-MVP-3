@@ -67,10 +67,13 @@ namespace IDZ_MVP.Chess
             _price = 1;
             _isWhite = isWhite;
             _coordinate = coordinate;
-            // вывод перенесён в наследники
         }
 
-        // Метод для вызова из наследников после установки полей
+        ~ChessPiece()
+        {
+            Console.WriteLine($"Фигура {this} срублена");
+        }
+
         protected void AnnounceCreation()
         {
             Console.WriteLine($"Фигура {this} на доске");
