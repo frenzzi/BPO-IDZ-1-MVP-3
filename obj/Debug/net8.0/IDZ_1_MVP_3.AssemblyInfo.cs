@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IDZ_1_MVP_3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb00a6b6d1def3c06f60e853c578e0493aeb4dd8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1fe8885dda111954ca59efb44abbf952be8cf9bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("IDZ_1_MVP_3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IDZ_1_MVP_3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
